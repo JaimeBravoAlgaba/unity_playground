@@ -1,0 +1,41 @@
+[0.009s] Invoking command in '/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint': /usr/bin/cmake /home/lorenzo/Bureau/Unity_Playground/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/lorenzo/Bureau/Unity_Playground/install/ros_tcp_endpoint
+[0.012s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.012s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.012s]   CMake.
+[0.012s] 
+[0.012s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.012s]   CMake that the project does not need compatibility with older versions.
+[0.012s] 
+[0.012s] [0m
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.133s] -- Detecting C compiler ABI info
+[0.197s] -- Detecting C compiler ABI info - done
+[0.205s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.205s] -- Detecting C compile features
+[0.205s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.285s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.297s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.297s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.297s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.297s]   CMake did not find one.
+[0.298s] 
+[0.298s]   Could not find a package configuration file provided by "catkin" with any
+[0.298s]   of the following names:
+[0.298s] 
+[0.298s]     catkinConfig.cmake
+[0.298s]     catkin-config.cmake
+[0.298s] 
+[0.298s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.298s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.298s]   provides a separate development package or SDK, be sure it has been
+[0.298s]   installed.
+[0.298s] 
+[0.298s] [0m
+[0.298s] -- Configuring incomplete, errors occurred!
+[0.298s] See also "/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint/CMakeFiles/CMakeOutput.log".
+[0.301s] Invoked command in '/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint' returned '1': /usr/bin/cmake /home/lorenzo/Bureau/Unity_Playground/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/lorenzo/Bureau/Unity_Playground/install/ros_tcp_endpoint

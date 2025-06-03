@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint': /usr/bin/cmake /home/lorenzo/Bureau/Unity_Playground/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/lorenzo/Bureau/Unity_Playground/install/ros_tcp_endpoint
+[0.012s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.012s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.012s]   CMake.
+[0.012s] 
+[0.012s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.012s]   CMake that the project does not need compatibility with older versions.
+[0.012s] 
+[0.012s] [0m
+[0.026s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.026s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.026s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.026s]   CMake did not find one.
+[0.026s] 
+[0.026s]   Could not find a package configuration file provided by "catkin" with any
+[0.027s]   of the following names:
+[0.027s] 
+[0.027s]     catkinConfig.cmake
+[0.027s]     catkin-config.cmake
+[0.027s] 
+[0.027s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.028s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.028s]   provides a separate development package or SDK, be sure it has been
+[0.028s]   installed.
+[0.028s] 
+[0.028s] [0m
+[0.029s] -- Configuring incomplete, errors occurred!
+[0.029s] See also "/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint/CMakeFiles/CMakeOutput.log".
+[0.029s] Invoked command in '/home/lorenzo/Bureau/Unity_Playground/build/ros_tcp_endpoint' returned '1': /usr/bin/cmake /home/lorenzo/Bureau/Unity_Playground/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/lorenzo/Bureau/Unity_Playground/install/ros_tcp_endpoint
