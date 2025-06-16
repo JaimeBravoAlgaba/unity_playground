@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="Robot">
+  <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+    <color rgba="0.9629 0.9629 0.9629 1" />
+  </material>
+  <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+    <color rgba="0.807 0.9122 0.9683 1" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 -0.01" />
+      <mass value="5" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin rpy="0 1.570796 0" />
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-NWheeled.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000" />
+    </visual>
+    <collision>
+      <origin rpy="0 1.570796 0" />
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-NWheeled.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="front_left">
+    <visual>
+      <origin rpy="0 0 -3.141593" />
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-Wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000" />
+    </visual>
+  </link>
+  <link name="front_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-Wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000" />
+    </visual>
+  </link>
+  <link name="back_left">
+    <visual>
+      <origin rpy="0 0 -3.141593" />
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-Wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000" />
+    </visual>
+  </link>
+  <link name="back_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://Assets/Robot/URDF/meshes/A4WD3-Wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000" />
+    </visual>
+  </link>
+  <joint name="base_link_front_left_joint" type="fixed">
+    <origin xyz="0.11 0.136 0.034" />
+    <parent link="base_link" />
+    <child link="front_left" />
+  </joint>
+  <joint name="base_link_front_right_joint" type="fixed">
+    <origin xyz="0.11 -0.136 0.034" />
+    <parent link="base_link" />
+    <child link="front_right" />
+  </joint>
+  <joint name="base_link_back_left_joint" type="fixed">
+    <origin xyz="-0.11 0.136 0.034" />
+    <parent link="base_link" />
+    <child link="back_left" />
+  </joint>
+  <joint name="base_link_back_right_joint" type="fixed">
+    <origin xyz="-0.11 -0.136 0.034" />
+    <parent link="base_link" />
+    <child link="back_right" />
+  </joint>
+</robot>
