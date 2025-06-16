@@ -3,8 +3,7 @@ A Unity-ROS2 environment for testing mobile robots in different terrains.
 
 ## Setting up Unity - ROS2
 
-- Please refer to the Unity-Robotics-Hub repository for installation and setup: https://github.com/Unity-Technologies/Unity-Robotics-Hub?tab=readme-ov-file
-
+- Please refer to the [Unity-Robotics-Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub?tab=readme-ov-file "Unity-Robotics-Hub") repository for installation and setup
 - Else you can follow my own streamlined complete guide right [here](https://github.com/JaimeBravoAlgaba/unity_playground/blob/main/Unity_Playground/Setting%20up%20Unity-ROS2%20environment.md "Streamlined guide") 
 
 ## Unity assets
