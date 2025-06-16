@@ -8,7 +8,7 @@ A Unity-ROS2 environment for testing mobile robots in different terrains.
 
 ## Unity assets
 
-Please refer to the [Assets guide]() for more details and implementation directives.
+Please refer to the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_playground/blob/main/Unity_Playground/Assets/Assets%20Guide.md "Assets guide") for more details and implementation directives.
 
 - Camera scripts:
   - `CameraToggle` allows to toggle between two cameras by pressing `c`. For example first and third person.
