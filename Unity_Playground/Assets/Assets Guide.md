@@ -25,7 +25,7 @@ Next you will need to set up ```Wheel Collider``` components for Unity to proper
 
 ![image](https://github.com/user-attachments/assets/8445c969-d844-4bd2-a6fd-b51de4fbe08a)
 
-- Do not forget to properly name and place each wheel collider in corresMovepondence to the wheel it will act as.
+- Do not forget to properly name and place each wheel collider in correspondence to the wheel it will act as.
 
 ## - Animate your robot
 
