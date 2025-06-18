@@ -34,11 +34,22 @@ Now we need to gain control of this robot, for this we will use Unity's integrat
 - Navigate to ```Edit/Project Settings/Input System Package``` and delete all actions and the action maps other than ```Player``` for good measure.
 - Create a new action and name it ```Move```, set ```Action Type``` as ```Value``` and ```Control Type``` as ```Vector 2```.
 - Now click on the ```+``` to the right of move and select ```Add Up/Down/Left/Right Composite``` and bind the new actions inuitively to ```WASD``` keys.
-- Close the window and access the Inspector of ```base_link``` in your URDF object.
+- Close the window and access the Inspector of ```Robot``` in your URDF object.
+- Add a ```Rigidbody``` component and set the mass of the robot, 3kg in our case.
 - Add a ```Player Input``` component and make sure it is set as follows:
+
 ![image](https://github.com/user-attachments/assets/fd96df09-51a3-4a1b-b43b-43a74bac0a60)
+
 - Next add the ```RobotDrive``` script as a component and attach the wheel colliders in the order front left, front right, back left, back right.
 - Do the same for the ```Wheel Visuals``` by drag and dropping the ```A4WD3-Wheel``` visual objects found under ```Visuals/unnamed``` in the same order as the wheel colliders.
+- Ensure that you have the same settings in Robot's inspector:
+
+![image](https://github.com/user-attachments/assets/e68e65b5-3807-4f9a-9a3b-6cc4251e1c8a)
+
+- Make sure that for every link Urdf inertial scripts are as follows:
+
+![image](https://github.com/user-attachments/assets/5d24b8c6-4183-49da-b0e3-9c8c4390a4be)
+
 - Launch play mode and test if the robot is indeed moving.
 
 ## - Camera manager
@@ -47,8 +58,7 @@ Now we need to gain control of this robot, for this we will use Unity's integrat
 - Create an ```Empty Game Object``` and name it ```Camera Manager```
 - Create a new camera object and name it ```FPV```, rename the main camera to ```TPV``` (third person view), and place them both under the ```Camera Manager``` object for organising purposes.
 - Add the ```CameraToggle``` script as a component of ```Camera Manager``` and attach the two cameras to the script. This will enable you to switch cameras by tapping ```c```
-- Add a ```Player Input``` component. Set ```Behaviour``` to ```Invoke Unity Events```. Open the ```Events/Player``` dropdown menu and under ```ToggleCamera (CallbackContext)``` tap ```+``` and drag the ```CameraManager``` and set the fucntion to ```CameraToggle/OnToggleCamera```.
-![image](https://github.com/user-attachments/assets/c38680b0-f95e-40ba-99b7-4523823175a8)
-
 - Respectively add ```RobotVision``` and ```FollowRobot``` scripts to ```FPV``` and ```TPV``` cameras and attach the ```base_link``` object to the cameras.
+- Disable one of the two cameras for the camera toggle script to work.
+- Drag the ```Camera Manager``` object in the ```Camera Toggle``` field.
 - If needed adjust the offset, pitch and yaw to your liking.
