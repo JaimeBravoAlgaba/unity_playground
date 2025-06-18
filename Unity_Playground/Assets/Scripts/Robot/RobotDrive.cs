@@ -7,13 +7,15 @@ public class RobotDrive : MonoBehaviour
     public Transform[] wheelVisuals; // Assign in Inspector: FL, FR, RL, RR
     public float motorTorque = 1.13f; // Lynxmotion A4WD3 max torque per wheel (Nm)
     public float maxWheelRpm = 170f; // A4WD3 spec
+    public CameraToggle cameraToggle; // Assign in inspector
 
     private Vector2 moveInput;
 
     // Called by Input System (bind to Move action)
-    public void OnMove(InputAction.CallbackContext context)
+    // Try this alternative signature for Send Messages
+    public void OnMove(InputValue value)
     {
-        moveInput = context.ReadValue<Vector2>();
+        moveInput = value.Get<Vector2>();
         Debug.Log("Move input: " + moveInput);
     }
 
@@ -47,7 +49,7 @@ public class RobotDrive : MonoBehaviour
             }
         }
 
-        // Update visual wheels to match colliders
+        // Update visual wheels to match colliders (only apply x-axis rotation)
         for (int i = 0; i < wheelColliders.Length; i++)
         {
             Vector3 pos;
@@ -55,8 +57,10 @@ public class RobotDrive : MonoBehaviour
             wheelColliders[i].GetWorldPose(out pos, out rot);
             if (wheelVisuals != null && wheelVisuals.Length > i && wheelVisuals[i] != null)
             {
-                wheelVisuals[i].position = pos;
-                wheelVisuals[i].rotation = rot;
+                // Only apply the x-axis rotation to the visual wheel
+                Vector3 euler = wheelVisuals[i].localEulerAngles;
+                float wheelRotX = rot.eulerAngles.x;
+                wheelVisuals[i].localEulerAngles = new Vector3(wheelRotX, euler.y, euler.z);
             }
         }
 
@@ -76,5 +80,11 @@ public class RobotDrive : MonoBehaviour
         {
             wheelCollider.radius = 0.08f; // 60mm radius
         }
+    }
+
+    public void OnToggleCamera()
+    {
+        if (cameraToggle != null)
+            cameraToggle.ToggleCamera();
     }
 }
