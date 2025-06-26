@@ -11,14 +11,15 @@ A Unity-ROS2 environment for testing mobile robots in different terrains.
 Please refer to the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_playground/blob/main/Unity_Playground/Assets/Assets%20Guide.md "Assets guide") for more details and implementation directives.
 
 - Camera scripts:
-  - `CameraToggle` allows to toggle between two cameras by pressing `c`. For example first and third person.
+  - `CameraToggle` allows to toggle between two cameras by pressing `C`. For example first and third person.
   - `FollowRobot` defines the third person view of the robot.
+  - 
   - `RobotVision` defines the first person view of the robot.
   - `RosImagePublisher` is the script used to publish both the raw and compressed image to a ROS2 topic.
  
 - Robot scripts:
-  - `RobotDrive` allows the user to control the Lynxmotion mobile base with the `WASD` keys.
-  - `RobotReset` supposedly unblocks the robot if ever needed (not yet working).
+  - `RobotControls` allows the user to control the Lynxmotion mobile base with the `WASD` keys + `R` for reset and `C` for camera toggle.
+    also works with PS4 gamepad with `Right Stick Vertical` to handle throttle, `Right Stick Horizontal` to handle turning and `Options` for reset and `Square` for camera toggle.
  
-- URDF:
-  - contains the URDF of the Lynxmotion robot base.
+- Meshes:
+  - COntains the meshes of the Lynxmotion robot base.
