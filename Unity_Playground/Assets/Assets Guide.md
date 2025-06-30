@@ -17,9 +17,9 @@ Make sure you reset all the position parameters to 0 and reorient the visual acc
 
 - Same as before add a visual but this time it will be ```A4WD3-Wheel``` in the same directory as before.
 
-- Add an articulation body component to the wheel object as set it as follows, pay attention to the ```Revolute``` joint type:
+- Add an articulation body component to the wheel object as set it as follows, pay attention to the ```Revolute``` joint type and the joint rotation:
 
-![image](https://github.com/user-attachments/assets/438476a5-d1b7-4b72-95ae-51891e29e41b)
+![image](https://github.com/user-attachments/assets/7e50a26f-cf00-425e-b57a-1f4b84cd5920)
 
 - Copy paste this object and rename to obtain all 4 wheel objects without having to add the component each time
 
