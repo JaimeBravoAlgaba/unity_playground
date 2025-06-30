@@ -1,54 +1,62 @@
 # Assets Guide
 
-## - Create URDF for Lynxmotion A4WD-3:
-
-##### Feel free to follow this guide for any other URDF you wish to create, simply replace the meshes and link type.
+## - Create model for Lynxmotion A4WD-3:
 
 - Please add the assets from this repo to your Unity project.
-- In your Unity Hierarchy add ```3D Object/URDF Model(new)```
-- Expand ```base_link``` and select ```Visuals``` the select ```Mesh``` in the dropdown menu and ```Add visual```.
-- Drag and drop the ```A4WD3-NWheeled``` mesh from ```Assets/Robot/Meshes/A4WD3-NWheeled``` onto the ```unnamed``` object which is the visual you've just added. The body of the robot should now appear on screen.
+- In your Unity Hierarchy create an empty object with ```CTRL+SHIFT+N```. Rename it A4WD3 for good measure, this will be the root object of your model.
+- Add the ```Articulation Body``` component and a ```Box Collider```. Set them as follows:
 
-Make sure you reset all the position parameters to 0.
+![image](https://github.com/user-attachments/assets/c0c6c4af-9ec8-4791-a8f2-b23ff9996acd)
 
-- Now you can add a child link from the inspector of ```base_link```. Select the ```Fixed``` joint type and ```Add child link (with joint)```.
 
-I recommend properly naming every child joint you create.
+- Drag and drop the ```A4WD3-Base``` mesh from ```Assets/Robot/Meshes``` onto the ```root object```, this is the visual you've just added. The body of the robot should now appear on screen.
 
-- Same as before add a visual but this time it will be ```A4WD3-Wheel``` under the ```Meshes/A4WD3-Wheel``` directory.
-- Positioning the child link object at x = &plusmn; 0.138 ; y = 0.034 ; z = &plusmn; 0.11. 
+Make sure you reset all the position parameters to 0 and reorient the visual accordingly.
 
-Next you will need to set up ```Wheel Collider``` components for Unity to properly integrate wheel physics:
+- Now you can add the wheels by creating a child object of the root object, rename the wheel to distinguish between front and rear as well as left and right.
 
-- In ```Hierarchy``` add empty objects with ```Ctrl+Maj+N``` under the base link of your URDF model.
-- Add the component ```Wheel Collider``` and fill in with the following values (which I found to work well with the Lynxmotion A4WD-3):
+- Same as before add a visual but this time it will be ```A4WD3-Wheel``` in the same directory as before.
 
-![image](https://github.com/user-attachments/assets/8445c969-d844-4bd2-a6fd-b51de4fbe08a)
+- Add an articulation body component to the wheel object as set it as follows, pay attention to the ```Revolute``` joint type:
+
+![image](https://github.com/user-attachments/assets/438476a5-d1b7-4b72-95ae-51891e29e41b)
+
+- Copy paste this object and rename to obtain all 4 wheel objects without having to add the component each time
+
+- Position the child objects at x = &plusmn; 0.183 ; y = 0.034 ; z = &plusmn; 0.11. 
+
+Next you will need to set up the colliders for the wheels.
+
+- In ```Hierarchy``` add cylinders with right click ```3D Object/Cylinder``` and drag it on top of the wheel child objects in the hierarchy and scale them down to x = z = .158 and y = .042
+
+- Delete the ```Capsule Collider``` component and replace it with a ```Mesh Collider``` in which you must check the ```Convex``` box.
+
+- For now leave mesh renderer checked but once you've finished the tutorial you might uncheck it to remove the parasitic visual or even delete it.
 
 - Do not forget to properly name and place each wheel collider in correspondence to the wheel it will act as.
+
+- Now add the Camera in the same manner and place it correctly. Donot forget to add an ```Articulation body``` and leave the joint as ```Fixed```
+
+- Your ```Hierarchy``` should look like this:
+
+![image](https://github.com/user-attachments/assets/6afdb537-66cf-43a3-9b67-32061aa8c95d)
 
 ## - Animate your robot
 
 Now we need to gain control of this robot, for this we will use Unity's integrated ```Input System Package```.
 
 - Navigate to ```Edit/Project Settings/Input System Package``` and delete all actions and the action maps other than ```Player``` for good measure.
-- Create a new action and name it ```Move```, set ```Action Type``` as ```Value``` and ```Control Type``` as ```Vector 2```.
-- Now click on the ```+``` to the right of move and select ```Add Up/Down/Left/Right Composite``` and bind the new actions inuitively to ```WASD``` keys.
-- Close the window and access the Inspector of ```Robot``` in your URDF object.
-- Add a ```Rigidbody``` component and set the mass of the robot, 3kg in our case.
+- You may remove all actions other than ```Move``` to tidy things up.
+- You may also add a `ResetOrientation` (case sensitive) action and bind it to your preferred key (typically ```R```)
+- Close the window and access the Inspector of your root object.
 - Add a ```Player Input``` component and make sure it is set as follows:
 
 ![image](https://github.com/user-attachments/assets/fd96df09-51a3-4a1b-b43b-43a74bac0a60)
 
-- Next add the ```RobotDrive``` script as a component and attach the wheel colliders in the order front left, front right, back left, back right.
-- Do the same for the ```Wheel Visuals``` by drag and dropping the ```A4WD3-Wheel``` visual objects found under ```Visuals/unnamed``` in the same order as the wheel colliders.
-- Ensure that you have the same settings in Robot's inspector:
+- Next add the ```Robot Controls``` script as a component and attach the wheel colliders in the order front left, front right, back left, back right.
+- Values should automatically be correct but feel free to edit them to your liking in the Inspector:
 
-![image](https://github.com/user-attachments/assets/e68e65b5-3807-4f9a-9a3b-6cc4251e1c8a)
-
-- Make sure that for every link Urdf inertial scripts are as follows:
-
-![image](https://github.com/user-attachments/assets/5d24b8c6-4183-49da-b0e3-9c8c4390a4be)
+![image](https://github.com/user-attachments/assets/9cc06b04-4752-4883-8ba1-05288d1f6524)
 
 - Launch play mode and test if the robot is indeed moving.
 
