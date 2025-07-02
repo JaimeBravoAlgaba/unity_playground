@@ -18,24 +18,35 @@ Please refer to the individual repos for the latest versions, all accessible thr
   git clone https://github.com/Unity-Technologies/Unity-Robotics-Hub.git
   ```
   
-- Open a terminal in `tutorials/ros_unity_integration` of the cloned repo, paste and run the following lines:
+- Download the [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2) repository and copy it into the `src` folder in your Colcon workspace.
+- Use the following command line to clone the right branch.
+
   ```bash
-  sudo docker build -t foxy -f ros2_docker/Dockerfile .
-  sudo docker run -it --rm -p 10000:10000 foxy /bin/bash
+  git clone -b main-ros2 https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
   ```
 
-If you get the error `failed: port is already allocated` after a misstype of the command enter `sudo lsof -i :10000` which will show the processes on port 10000 and then enter `sudo kill -9 <PID>` by replacing `<PID>` with the actual PID found in the list of processes.
-  
-- Then in the docker terminal run:
-  ```bash
-  ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
-  ```
+-   Then navigate to your Colcon workspace and run the following commands:
+
+    ```bash
+	source install/setup.bash
+    colcon build
+	source install/setup.bash
+	```
+
+	Note: yes, you need to run the source command twice. The first sets up the environment for the build to use, the second time adds the newly built packages to the environent.
+
+- In your Colcon workspace, run the following command, replacing `<your IP address>` with your ROS machine's IP or hostname.
+
+	```bash
+	ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP address>
+    ```
+- Run ```ifconfig``` in a terminal to find out your IP address.
   
 - In the Unity menu bar open the `Robotics` tab and select `ROS Settiings`.
   
-- Make sure you have the same fields, pay close attention to the `Protocol` field being on `ROS1` by default
+- Make sure you have the same fields, pay close attention to the `Protocol` field being on `ROS1` by default, set it to ```ROS2```. Replace the ```ROS IP Address``` with your IP address.
 
-![image](https://github.com/user-attachments/assets/18c899a0-e67f-4612-92e4-df0765c7b9e7)
+![image](https://github.com/user-attachments/assets/a30afe80-e161-4d0d-990b-ad0a66358b1c)
 
 - In the Unity menu bar, the `Robotics` tab and select `Generate ROS Messages`. In the Message Browser window, click the Browse button at the top right to set the ROS message path to tutorials/ros_unity_integration/ros2_packages/unity_robotics_demo_msgs in the cloned repo.
 
