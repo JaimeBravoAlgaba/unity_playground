@@ -9,7 +9,6 @@
 - Paste the following links for the ROS-TCP-Connector, visualisations and the URDF-Importer packages necessary for ROS-Unity communications:
   - `https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector`
   - `https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.visualizations`
-  - `https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2`
 
 Please refer to the individual repos for the latest versions, all accessible through the Unity-Robotics-Hub repo `https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main`
 
