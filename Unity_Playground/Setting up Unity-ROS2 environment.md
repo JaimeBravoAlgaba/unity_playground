@@ -17,7 +17,7 @@ Please refer to the individual repos for the latest versions, all accessible thr
   git clone https://github.com/Unity-Technologies/Unity-Robotics-Hub.git
   ```
   
-- Download the [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2) repository and copy it into the `src` folder in your Colcon workspace.
+- Clone the [ROS2 branch of the ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint/tree/main-ros2) repository into the `src` folder in your Colcon workspace.
 - Use the following command line to clone the right branch.
 
   ```bash
