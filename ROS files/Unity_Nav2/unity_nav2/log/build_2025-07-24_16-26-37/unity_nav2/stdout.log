@@ -1,0 +1,35 @@
+running egg_info
+creating build/unity_nav2/unity_nav2.egg-info
+writing build/unity_nav2/unity_nav2.egg-info/PKG-INFO
+writing dependency_links to build/unity_nav2/unity_nav2.egg-info/dependency_links.txt
+writing entry points to build/unity_nav2/unity_nav2.egg-info/entry_points.txt
+writing requirements to build/unity_nav2/unity_nav2.egg-info/requires.txt
+writing top-level names to build/unity_nav2/unity_nav2.egg-info/top_level.txt
+writing manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+reading manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+writing manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+copying unity_nav2/unity_nav2_republish.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+copying unity_nav2/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+running install
+running install_lib
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+copying /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2/unity_nav2_republish.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+copying /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2/unity_nav2_republish.py to unity_nav2_republish.cpython-310.pyc
+byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index
+creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index/packages
+copying resource/unity_nav2 -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index/packages
+copying package.xml -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/unity_nav2
+running install_egg_info
+Copying build/unity_nav2/unity_nav2.egg-info to /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2-0.0.0-py3.10.egg-info
+running install_scripts
+Installing unity_nav2_republish script to /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/unity_nav2
+writing list of installed files to '/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/install.log'

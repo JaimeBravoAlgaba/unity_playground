@@ -1,0 +1,37 @@
+[0.482s] Invoking command in '/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2': PYTHONPATH=/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/unity_nav2 build --build-base /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build install --record /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/install.log --single-version-externally-managed install_data
+[0.661s] running egg_info
+[0.661s] creating build/unity_nav2/unity_nav2.egg-info
+[0.661s] writing build/unity_nav2/unity_nav2.egg-info/PKG-INFO
+[0.661s] writing dependency_links to build/unity_nav2/unity_nav2.egg-info/dependency_links.txt
+[0.661s] writing entry points to build/unity_nav2/unity_nav2.egg-info/entry_points.txt
+[0.661s] writing requirements to build/unity_nav2/unity_nav2.egg-info/requires.txt
+[0.661s] writing top-level names to build/unity_nav2/unity_nav2.egg-info/top_level.txt
+[0.662s] writing manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+[0.663s] reading manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+[0.664s] writing manifest file 'build/unity_nav2/unity_nav2.egg-info/SOURCES.txt'
+[0.664s] running build
+[0.664s] running build_py
+[0.664s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build
+[0.664s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib
+[0.664s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+[0.664s] copying unity_nav2/unity_nav2_republish.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+[0.664s] copying unity_nav2/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2
+[0.664s] running install
+[0.665s] running install_lib
+[0.665s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+[0.665s] copying /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2/unity_nav2_republish.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+[0.665s] copying /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build/lib/unity_nav2/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2
+[0.666s] byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2/unity_nav2_republish.py to unity_nav2_republish.cpython-310.pyc
+[0.666s] byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2/__init__.py to __init__.cpython-310.pyc
+[0.666s] running install_data
+[0.667s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index
+[0.667s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index
+[0.667s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index/packages
+[0.667s] copying resource/unity_nav2 -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/ament_index/resource_index/packages
+[0.667s] copying package.xml -> /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/share/unity_nav2
+[0.667s] running install_egg_info
+[0.668s] Copying build/unity_nav2/unity_nav2.egg-info to /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages/unity_nav2-0.0.0-py3.10.egg-info
+[0.669s] running install_scripts
+[0.686s] Installing unity_nav2_republish script to /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/unity_nav2
+[0.687s] writing list of installed files to '/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/install.log'
+[0.715s] Invoked command in '/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2' returned '0': PYTHONPATH=/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/install/unity_nav2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/unity_nav2 build --build-base /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/build install --record /home/lorenzo/Desktop/CAR/Unity_Nav2/unity_nav2/build/unity_nav2/install.log --single-version-externally-managed install_data

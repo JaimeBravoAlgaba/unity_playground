@@ -8,7 +8,7 @@ public class CameraToggle : MonoBehaviour
     // Method name must match the action name exactly, no parameters
     public void ToggleCamera()
     {
-        Debug.Log("Toggle Camera called");
+        //Debug.Log("Toggle Camera called");
         bool cam1Active = camera1.enabled;
         camera1.enabled = !cam1Active;
         camera2.enabled = cam1Active;

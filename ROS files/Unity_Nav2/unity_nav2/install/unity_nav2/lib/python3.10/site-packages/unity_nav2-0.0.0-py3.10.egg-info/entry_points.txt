@@ -1,0 +1,3 @@
+[console_scripts]
+unity_nav2_republish = unity_nav2.unity_nav2_republish:main
+

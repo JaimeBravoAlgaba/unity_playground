@@ -5,7 +5,7 @@ using UnityEngine;
 public class RobotVision : MonoBehaviour
 {
     public GameObject robot; // The robot to follow
-    public Vector3 localOffset = new Vector3(0, 0.15f, 0.2f); // Slightly above and forward from robot's origin
+    public Vector3 localOffset = new Vector3(0, 1f, 0f); // above from robot's origin
 
     [Header("Camera Angle (degrees)")]
     [Range(-90, 90)]

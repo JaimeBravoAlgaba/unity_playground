@@ -1,0 +1,37 @@
+[0.463s] Invoking command in '/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg': PYTHONPATH=/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_pub_pkg build --build-base /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build install --record /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/install.log --single-version-externally-managed install_data
+[0.642s] running egg_info
+[0.643s] creating build/my_pub_pkg/my_pub_pkg.egg-info
+[0.643s] writing build/my_pub_pkg/my_pub_pkg.egg-info/PKG-INFO
+[0.643s] writing dependency_links to build/my_pub_pkg/my_pub_pkg.egg-info/dependency_links.txt
+[0.643s] writing entry points to build/my_pub_pkg/my_pub_pkg.egg-info/entry_points.txt
+[0.643s] writing requirements to build/my_pub_pkg/my_pub_pkg.egg-info/requires.txt
+[0.643s] writing top-level names to build/my_pub_pkg/my_pub_pkg.egg-info/top_level.txt
+[0.643s] writing manifest file 'build/my_pub_pkg/my_pub_pkg.egg-info/SOURCES.txt'
+[0.645s] reading manifest file 'build/my_pub_pkg/my_pub_pkg.egg-info/SOURCES.txt'
+[0.645s] writing manifest file 'build/my_pub_pkg/my_pub_pkg.egg-info/SOURCES.txt'
+[0.646s] running build
+[0.646s] running build_py
+[0.646s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build
+[0.646s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib
+[0.646s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib/my_pub_pkg
+[0.646s] copying my_pub_pkg/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib/my_pub_pkg
+[0.646s] copying my_pub_pkg/simple_publisher.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib/my_pub_pkg
+[0.646s] running install
+[0.646s] running install_lib
+[0.647s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg
+[0.647s] copying /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib/my_pub_pkg/__init__.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg
+[0.647s] copying /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build/lib/my_pub_pkg/simple_publisher.py -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg
+[0.647s] byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg/__init__.py to __init__.cpython-310.pyc
+[0.647s] byte-compiling /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg/simple_publisher.py to simple_publisher.cpython-310.pyc
+[0.648s] running install_data
+[0.648s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/share/ament_index
+[0.648s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/share/ament_index/resource_index
+[0.648s] creating /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/share/ament_index/resource_index/packages
+[0.648s] copying resource/my_pub_pkg -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/share/ament_index/resource_index/packages
+[0.648s] copying package.xml -> /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/share/my_pub_pkg
+[0.648s] running install_egg_info
+[0.650s] Copying build/my_pub_pkg/my_pub_pkg.egg-info to /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages/my_pub_pkg-0.0.0-py3.10.egg-info
+[0.650s] running install_scripts
+[0.668s] Installing simple_publisher script to /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/my_pub_pkg
+[0.668s] writing list of installed files to '/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/install.log'
+[0.695s] Invoked command in '/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg' returned '0': PYTHONPATH=/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/install/my_pub_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_pub_pkg build --build-base /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/build install --record /home/lorenzo/Desktop/CAR/Unity_Nav2/my_pub_pkg/build/my_pub_pkg/install.log --single-version-externally-managed install_data

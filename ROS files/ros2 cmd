@@ -1,0 +1,12 @@
+Unity playground cmd:
+
+ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=
+
+ros2 run unity_nav2 unity_nav2_republish
+
+ros2 launch slam_toolbox online_async_launch.py params_file:=/home/lorenzo/Desktop/CAR/Nav2Config/RE_mapper_params_online_async.yaml
+or
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=false
+
+ros2 launch nav2_bringup navigation_launch.py slam:=True use_sim_time:=false
+
