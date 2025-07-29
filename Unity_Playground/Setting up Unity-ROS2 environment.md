@@ -54,6 +54,6 @@ Please refer to the individual repos for the latest versions, all accessible thr
 
 ![image](https://github.com/user-attachments/assets/9d3a4f0c-d1d7-473b-83c9-d35c60d10fd7)
 
-- Set up the ROSPublisher by creating an empty game object in the Unity hierarchy and add the `RosImagePublisher` script as a component naming the topics and selecting the target camera, make sure to dissble that camera for the sake of the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_p "Assets guide") which I recommed you follow next.
+- Set up the ROSPublisher by creating an empty game object in the Unity hierarchy and add the `RosImagePublisher` script as a component naming the topics and selecting the target camera, make sure to dissble that camera for the sake of the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_playground/blob/main/Unity_Playground/Assets/Assets%20Guide.md "Assets guide") which I recommed you follow next.
 
 - Run `rviz2` and add visualization by topic. Select the `Image` topic.
