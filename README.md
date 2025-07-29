@@ -10,4 +10,4 @@ TO be used within a ```3D (Built-in Render Pipeline)``` project.
 
 ## Unity assets
 
-Please refer to the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_playground/blob/main/Unity_Playground/Assets/Assets%20Guide.md "Assets guide") for more details and implementation directives.
+Please refer to the [Assets guide](https://github.com/JaimeBravoAlgaba/unity_playground/blob/d35965db6d9b59d55b0a4d5fb1bc9428c1f70fa5/Unity_Playground/Assets%20Guide.md "Assets guide") for more details and implementation directives.
