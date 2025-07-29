@@ -18,3 +18,13 @@ https://github.com/Field-Robotics-Japan/UnitySensors.git?path=/Assets/UnitySenso
 ```
 
 All console errors should disappear.
+
+## - ROS2 files
+
+- Unity's clock and ROS2's clock are not sychronized, a ROS2 republisher is therefore necessary in order to be able tu use ```Nav2``` and ```SLAM```.
+    - Source and run the ROS2 node by opening a terminal in ```unity_Nav2/unity_nav2``` sourcing and running
+```bash
+ros2 run unity_nav2 unity_nav2_republish
+```
+- In the ```ros2_cmd``` text file you will find all the commands that I use and plan to use (in the case of nav2 and slam, which are not yet operational).
+  
