@@ -19,6 +19,20 @@ https://github.com/Field-Robotics-Japan/UnitySensors.git?path=/Assets/UnitySenso
 
 All console errors should disappear.
 
+If this error appear:
+
+<img width="713" height="173" alt="image" src="https://github.com/user-attachments/assets/7df14847-9da2-423e-95f0-73148b835f28" />
+
+navigate to this path in the ```Project``` tab:
+
+<img width="688" height="146" alt="image" src="https://github.com/user-attachments/assets/5bc27d75-718f-45dd-a2a0-4c0a3642a594" />
+
+and drag an drop the ```Mid-360``` aset in the ```Scan Pattern``` field of the ```Raycast Li DAR Sensor``` script field in your LiDAR's inspector tab.
+
+<img width="715" height="374" alt="image" src="https://github.com/user-attachments/assets/8e0c8c0c-badd-4cd1-b7c0-7b692b387499" />
+
+Note that these scan assets determine the angle FOV of the LiDAR.
+
 ## - ROS2 files
 
 - Unity's clock and ROS2's clock are not sychronized, a ROS2 republisher is therefore necessary in order to be able tu use ```Nav2``` and ```SLAM```.
