@@ -39,7 +39,12 @@ Please refer to the individual repos for the latest versions, all accessible thr
 	```bash
 	ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP address>
     ```
-- Run ```ifconfig``` in a terminal to find out your IP address.
+- Run ```ifconfig``` in a terminal to find out your IP address. Or run this:
+  
+    ```bash
+    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=$(hostname -I | awk '{print $1}')
+	```
+	to automatically get your current IP.
   
 - In the Unity menu bar open the `Robotics` tab and select `ROS Settiings`.
   
